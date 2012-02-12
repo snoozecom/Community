@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Piecemaker>
+  <Settings>
+    <imageWidth>970</imageWidth>
+    <imageHeight>341</imageHeight>
+    <segments>7</segments>
+    <tweenTime>1.2</tweenTime>
+    <tweenDelay>0.1</tweenDelay>
+    <tweenType>easeInOutBack</tweenType>
+    <zDistance>0</zDistance>
+    <expand>20</expand>
+    <innerColor>0x111111</innerColor>
+    <textBackground>0x0064C8</textBackground>
+    <shadowDarkness>100</shadowDarkness>
+    <textDistance>25</textDistance>
+    <autoplay>12</autoplay>
+  </Settings>
+  <Image Filename="bf3.png">
+    <Text>
+      <headline>Battlefield 3</headline>
+      <break>Ӂ</break>
+      <paragraph>Schaut euch unser Review von BF 3 an.</paragraph>
+      <break>Ӂ</break>
+      <inline>In unserem Review zu BF 3 zeigen wir euch einen kleinen Einblich in das Spielgeschehen und gehen mit euch die Anforderungen durch.</inline>
+    </Text>
+  </Image>
+  <Image Filename="mc.png">
+    <Text>
+      <headline>Minecraft 1.0</headline>
+      <break>Ӂ</break>
+      <paragraph>Mojang hat Minecraft 1.0 zum Download freigegeben.</paragraph>
+      <break>Ӂ</break>
+      <inline>Hier geben wir euch einen einblich in Minecraft und eine Verlosung.</inline>
+    </Text>
+  </Image>
+  <Image Filename="mw3.png">
+    <Text>
+      <headline>Modern Warfare 3</headline>
+      <break>Ӂ</break>
+      <paragraph>Mit MW3 geht die CoD reihe weiter und das nicht so wie viele gedacht haben.</paragraph>
+      <break>Ӂ</break>
+      <inline>Wie</inline>
+      <a href="#" target="_blank">EA</a>
+      <paragraph>auf die Idee kam und so weiter.</paragraph>
+    </Text>
+  </Image>
+  </Piecemaker>
