@@ -1,8 +1,8 @@
 <?php
-$verbindung = mysql_connect("localhost","web149","srecvHY9")
+$verbindung = mysql_connect("localhost","root","")
 or die("Verbindung zur Datenbank konnte nicht hergestellt werden"); 
 
-mysql_select_db("usr_web149_10") or die ("Datenbank konnte nicht ausgewählt werden"); 
+mysql_select_db("community") or die ("Datenbank konnte nicht ausgewählt werden"); 
 
 if(isset($_GET['page'])) {
 	$page = $_GET['page'];
