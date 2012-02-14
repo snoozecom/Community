@@ -1,6 +1,14 @@
 <?php 
-$seite = $_GET["seite"];  //Abfrage auf welcher Seite man ist
-$kategorie = $_GET["kat"];  //Abfrage welche Kategorie gewählt wurde
+if(isset($_GET['seite'])) {
+	$seite = $_GET["seite"];
+		} else { 
+	$seite = '1'; }
+
+if(isset($_GET['kat'])) {
+	$kat = $_GET["kat"];
+		} else { 
+	$kat = 'all'; }
+
 $return = ""; 
 $pagetitle = 'Home';
 
@@ -12,8 +20,11 @@ if(!isset($seite))
 $eintraege_pro_seite = 2; 
 $start = $seite * $eintraege_pro_seite - $eintraege_pro_seite; 
 
-
-$abfrage = "SELECT * FROM com_news WHERE aktiv = '1' ORDER BY id DESC LIMIT $start, $eintraege_pro_seite"; 
+	if($kat == 'all') {
+			$abfrage = "SELECT * FROM com_news WHERE aktiv = '1' ORDER BY id DESC LIMIT $start, $eintraege_pro_seite"; 
+		} else { 
+			$abfrage = "SELECT * FROM com_news WHERE aktiv = '1' AND kategorie = '$kat' ORDER BY id DESC LIMIT $start, 			$eintraege_pro_seite"; 
+		}
 $ergebnis = mysql_query($abfrage); 
 while($row = mysql_fetch_object($ergebnis)) 
     {
@@ -24,12 +35,14 @@ while($row = mysql_fetch_object($ergebnis))
 	$title = htmlentities($title);
 	$title = nl2br($title);
     $datum = date("d.m.Y H:i", $row->datum); 
+	$author = $row->name;
+	$kategorieprint = $row->kategorie;
 
 $return .="<div class='box post' id='post-41'>
 				<div class='post-title' style='margin-top10px;'>
             		<h2>$title</h2>
 				</div>
-				<div class='post-date'>Von <b>$name</b> am $datum <a href='#'>11</a> Comments </div>
+				<div class='post-date'>Von <b>$author</b> am $datum in $kategorieprint</div>
 				<div class='clr'></div>
 				<!--<div class='pic fl'>
           			<a href='#' rel='bookmark' title=''>
@@ -42,7 +55,7 @@ $return .="<div class='box post' id='post-41'>
 				Schreibe ein <a href='#'>Kommentar</a> &raquo;
 				</div>
 				</div>
-				<div class='clr'></div>";
+				<div class='clr'></div><br>";
      
    } 
 $result = mysql_query("SELECT id FROM com_news WHERE aktiv = '1'"); 

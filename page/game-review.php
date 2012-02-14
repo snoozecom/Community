@@ -1,5 +1,10 @@
 <?php 
-$seite = $_GET["seite"];  //Abfrage auf welcher Seite man ist 
+
+if(isset($_GET['seite'])) {
+	$seite = $_GET["seite"];
+		} else { 
+	$seite = '1'; }
+
 $return = ""; 
 $pagetitle = 'Game-Reviews';
 
