@@ -1,7 +1,7 @@
     <div class="clr"></div>
     <div id="nav1">
       <ul class="sf-menu sf-js-enabled">
-        <li class="cat-item cat-item-9"><a href="#" class="active" title="Link"><span>Link</span></a> </li>
+       <!-- <li class="cat-item cat-item-9"><a href="#" class="active" title="Link"><span>Link</span></a> </li>
         <li class="cat-item cat-item-3"><a href="#" title="Link"><span>Link</span></a> </li>
         <li class="cat-item cat-item-6"><a href="#" title="Link"><span>Link</span></a>
           <ul class='children'>
@@ -18,7 +18,7 @@
         <li class="cat-item cat-item-1"><a href="#" title="Link"><span>Link</span></a> </li>
         <li class="cat-item cat-item-4"><a href="#" title="Link"><span>Link</span></a> </li>
         <li class="cat-item cat-item-8"><a href="#" title="Link"><span>Link</span></a> </li>
-        <li class="cat-item cat-item-10"><a href="#" title="Link"><span>Link</span></a> </li>
+        <li class="cat-item cat-item-10"><a href="#" title="Link"><span>Link</span></a> </li>-->
       </ul>
       <div class="clr"></div>
     </div>

@@ -1,24 +1,12 @@
     <div class="clr"></div>
     <div id="nav1">
       <ul class="sf-menu sf-js-enabled">
-        <li class="cat-item cat-item-9"><a href="#" class="active" title="Link"><span>Link</span></a> </li>
-        <li class="cat-item cat-item-3"><a href="#" title="Link"><span>Link</span></a> </li>
-        <li class="cat-item cat-item-6"><a href="#" title="Link"><span>Link</span></a>
-          <ul class='children'>
-            <li class="cat-item cat-item-12"><a href="#" title="Link"><span>Link</span></a> </li>
-            <li class="cat-item cat-item-13"><a href="#" title="Link"><span>Link</span></a> </li>
-            <li class="cat-item cat-item-11"><a href="#" title="Link"><span>Link</span></a>
-              <ul class='children'>
-                <li class="cat-item cat-item-14"><a href="#" title="Link"><span>Link</span></a> </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="cat-item cat-item-7"><a href="#" title="Link"><span>Link</span></a> </li>
-        <li class="cat-item cat-item-1"><a href="#" title="Link"><span>Link</span></a> </li>
-        <li class="cat-item cat-item-4"><a href="#" title="Link"><span>Link</span></a> </li>
-        <li class="cat-item cat-item-8"><a href="#" title="Link"><span>Link</span></a> </li>
-        <li class="cat-item cat-item-10"><a href="#" title="Link"><span>Link</span></a> </li>
+        <li class="cat-item cat-item-9"><a href="#" class="active" title="Link"><span>Admins</span></a> </li>
+        <li class="cat-item cat-item-3"><a href="#" title="Link"><span>Moderatoren</span></a> </li>
+        <li class="cat-item cat-item-6"><a href="#" title="Link"><span>Reviewer</span></a>
+        <li class="cat-item cat-item-12"><a href="#" title="Link"><span>Autoren</span></a> </li>
+        <li class="cat-item cat-item-13"><a href="#" title="Link"><span>Journalisten</span></a> </li>
+        <li class="cat-item cat-item-11"><a href="#" title="Link"><span>Besondere User</span></a></li>
       </ul>
       <div class="clr"></div>
     </div>
