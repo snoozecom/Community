@@ -9,6 +9,9 @@ if(isset($_GET['kat'])) {
 		} else { 
 	$kat = 'all'; }
 
+
+$activesubnavi = 'active'.$_GET["kat"];
+
 $return = ""; 
 $pagetitle = 'Home';
 
@@ -58,16 +61,18 @@ $return .="<div class='box post' id='post-41'>
 				<div class='clr'></div><br>";
      
    } 
-$result = mysql_query("SELECT id FROM com_news WHERE aktiv = '1'"); 
+   
+   if($kat == 'all') {
+			$result = mysql_query("SELECT id FROM com_news WHERE aktiv = '1'"); 
+	   } else {
+			$result = mysql_query("SELECT id FROM com_news WHERE aktiv = '1' AND kategorie = '$kat' "); 
+	   }
 $menge = mysql_num_rows($result); 
-
 
 $wieviel_seiten = $menge / $eintraege_pro_seite; 
 
 //Ausgabe der Seitenlinks: 
-$return .='<div class="wp-pagenavi">'; 
-//$return .='<span class="pages">Seite '.$seite.' von '.$wieviel_seiten.'</span>'; 
-
+$return .='<div class="wp-pagenavi">Seite :'; 
 
 //Ausgabe der Links zu den Seiten 
 for($a=0; $a < $wieviel_seiten; $a++) 
@@ -77,17 +82,15 @@ for($a=0; $a < $wieviel_seiten; $a++)
    //Wenn der User sich auf dieser Seite befindet, keinen Link ausgeben 
    if($seite == $b) 
       { 
-      $return .='Seite :<span class="current">'.$b.'</span>'; 
+      $return .='<span class="current">'.$b.'</span>'; 
       } 
 
    //Aus dieser Seite ist der User nicht, also einen Link ausgeben 
    else 
       { 
-      $return .='<a href="index.php?page=home&seite='.$b.'" title="'.$b.'">'.$b.'</a>'; 
+      $return .='<a href="index.php?page=home&kat='.$kat.'&seite='.$b.'" title="Seite '.$b.'">'.$b.'</a>'; 
       } 
    } 
-$return .="</div>"; 
-//$returnd.= '<div class="wp-pagenavi"><span class="pages">Seite 1 von 2</span><span class="current">1</span><a href="#" title="2">2</a><a href="#" >&raquo;</a></div>';
-	  
-	  $content = $return
+$return .="</div>";
+$content = $return
 	  ?>

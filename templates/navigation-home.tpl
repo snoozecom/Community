@@ -1,18 +1,30 @@
     <div class="clr"></div>
     <div id="nav1">
       <ul class="sf-menu sf-js-enabled">
-        <li class="cat-item cat-item-9"><a href="index.php?kat=Games" class="active" title="Link">
+        <li class="cat-item cat-item-9"><a href="index.php?kat=Games" class="{$activeGames}" title="Link">
         	<span>Games</span></a>
         </li>
-        <li class="cat-item cat-item-3"><a href="index.php?kat=Hardware" title="Link">
+        <li class="cat-item cat-item-3"><a href="index.php?kat=Hardware" class="{$activeHardware}" title="Link">
         	<span>Hardware</span></a>
         </li>
-        <li class="cat-item cat-item-6"><a href="index.php?kat=Apple" title="Link"><span>Apple</span></a>
-        <li class="cat-item cat-item-7"><a href="index.php?kat=Windows" title="Link"><span>Windows</span></a> </li>
-        <li class="cat-item cat-item-1"><a href="index.php?kat=Software" title="Link"><span>Software</span></a> </li>
-        <li class="cat-item cat-item-4"><a href="index.php?kat=Handys" title="Link"><span>Handys</span></a> </li>
-        <li class="cat-item cat-item-8"><a href="index.php?kat=Sonstige" title="Link"><span>Sonstige News</span></a> </li>
-        <li class="cat-item cat-item-10"><a href="index.php?kat=Allgemein" title="Link"><span>Allgemeine News</span></a> </li>
+        <li class="cat-item cat-item-6"><a href="index.php?kat=Apple" class="{$activeApple}" title="Link">
+        	<span>Apple</span></a>
+        </li>
+        <li class="cat-item cat-item-7"><a href="index.php?kat=Windows" class="{$activeWindows}" title="Link">
+        	<span>Windows</span></a>
+        </li>
+        <li class="cat-item cat-item-1"><a href="index.php?kat=Software" class="{$activeSoftware}" title="Link">
+        	<span>Software</span></a>
+		</li>
+        <li class="cat-item cat-item-4"><a href="index.php?kat=Handys" class="{$activeHandys}" title="Link">
+        	<span>Handys</span></a>
+        </li>
+        <li class="cat-item cat-item-8"><a href="index.php?kat=Sonstige" class="{$activeSonstige}" title="Link">
+        	<span>Sonstige News</span></a>
+        </li>
+        <li class="cat-item cat-item-10"><a href="index.php?kat=Allgemein" class="{$activeAllgemein}" title="Link">
+        	<span>Allgemeine News</span></a>
+        </li>
       </ul>
       <div class="clr"></div>
     </div>

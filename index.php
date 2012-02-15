@@ -14,9 +14,13 @@ include("template.class.php");
 include("inc/constants.inc.php");
 include("page/".$page.".php");
 
+$activenavi = 'activeNavi'.$page;
+
 $tpl = new Template();
 $tpl->load($page.".tpl");
 $tpl->assign("pagetitle", $pagetitle);
+$tpl->assign($activenavi, "current_page_item");
+$tpl->assign($activesubnavi, "active");
 $tpl->assign("name", $comname);
 $tpl->assign("content", $content);
 $tpl->assign("comname", $comname);

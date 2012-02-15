@@ -7,6 +7,7 @@ if(isset($_GET['seite'])) {
 
 $return = ""; 
 $pagetitle = 'Game-Reviews';
+$activesubnavi = 'games';
 
 //Wenn man keine Seite angegeben hat, ist man automatisch auf Seite 1 
 if(!isset($seite)) 

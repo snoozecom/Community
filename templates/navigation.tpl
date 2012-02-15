@@ -7,10 +7,10 @@
     <!--/logo -->
     <div class="topnav">
       <ul>
-        <li class="current_page_item"><a href="index.php" title="Home" class="current_page_item"><span>Home</span></a></li>
-        <li class="page_item page-item-2"><a href="index.php?page=game-review" title="Game-Reviews"><span>Game-Reviews</span></a></li>
+        <li class="current_page_item"><a href="index.php" title="Home" class="{$activeNaviHome}"><span>Home</span></a></li>
+        <li class="page_item page-item-2"><a href="index.php?page=game-review" class="{$activeNavigame-review}" title="Game-Reviews"><span>Game-Reviews</span></a></li>
         <li class="page_item page-item-3"><a href="#" title="Forum"><span>Forum</span></a></li>
-        <li class="page_item page-item-4"><a href="index.php?page=team" title=""><span>Team</span></a></li>
+        <li class="page_item page-item-4"><a href="index.php?page=team"  class="{$activeNaviHome}" title="Das Team"><span>Team</span></a></li>
       </ul>
       <div class="clr"></div>
     </div>
