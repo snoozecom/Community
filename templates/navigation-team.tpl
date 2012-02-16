@@ -1,12 +1,14 @@
     <div class="clr"></div>
     <div id="nav1">
       <ul class="sf-menu sf-js-enabled">
-        <li class="cat-item cat-item-9"><a href="#" class="active" title="Link"><span>Admins</span></a> </li>
-        <li class="cat-item cat-item-3"><a href="#" title="Link"><span>Moderatoren</span></a> </li>
-        <li class="cat-item cat-item-6"><a href="#" title="Link"><span>Reviewer</span></a>
-        <li class="cat-item cat-item-12"><a href="#" title="Link"><span>Autoren</span></a> </li>
-        <li class="cat-item cat-item-13"><a href="#" title="Link"><span>Journalisten</span></a> </li>
-        <li class="cat-item cat-item-11"><a href="#" title="Link"><span>Besondere User</span></a></li>
+    <li class="cat-item cat-item-9"><a href="index.php?page=team&subpage=admins" class="{$activeadmins}" title="Link">
+        	<span>Admins</span></a>
+        </li>
+        <li class="cat-item cat-item-3"><a href="index.php?page=team&subpage=mods" class="{$activemods}" title="Link"><span>Moderatoren</span></a> </li>
+        <li class="cat-item cat-item-6"><a href="index.php?page=team&subpage=reviewer" class="{$activereviewer}" title="Link"><span>Reviewer</span></a>
+        <li class="cat-item cat-item-12"><a href="index.php?page=team&subpage=autoren" class="{$activeautoren}" title="Link"><span>Autoren</span></a> </li>
+        <li class="cat-item cat-item-13"><a href="index.php?page=team&subpage=journalisten" class="{$activejournalisten}" title="Link"><span>Journalisten</span></a> </li>
+        <li class="cat-item cat-item-11"><a href="index.php?page=team&subpage=besondereuser" class="{$activebesondereuser}" title="Link"><span>Besondere User</span></a></li>
       </ul>
       <div class="clr"></div>
     </div>

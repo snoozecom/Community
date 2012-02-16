@@ -73,7 +73,7 @@
 <div id="page_bottom">
   <div id="footer">
     <div class="text">&copy; {$comname}</div>
-    <div class="text2"> Design: <a href="http://www.templatesold.com">Website Templates</a></div>
+  <div class="text2"><a href="index.php?page=imprint">Impressum</a></div>
     <div class="clr"></div>
   </div>
   <!--/footer -->

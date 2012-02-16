@@ -5,8 +5,13 @@ $pagetitle = 'Das Team';
 if(isset($_GET['subpage'])) {
 	$subpage = $_GET["subpage"];
 		} else { 
-	$subpage = 'admins'; }
-$admins = '
+	$subpage = 'admins';
+	}
+	
+$activesubnavi = 'active'.$_GET["subpage"];
+
+if($subpage == 'admins') {
+$content = '
 <div class="post-title">
             <h2>Das Game-Lauch.de-Team</h2>
           </div>
@@ -38,8 +43,8 @@ $admins = '
       <!--/box -->
       <div class="clr"></div>
 	  ';
-
-$mods = '
+} elseif($subpage == 'mods') {
+$content = '
 <div class="post-title">
             <h2>Das Game-Lauch.de-Team</h2>
           </div>
@@ -60,7 +65,7 @@ $mods = '
 		  <div class="pic fl"><a href="#" rel="bookmark" title="Permanent Link to Using jQuery To Create A OSX Dock Effect"><img src="images/img_1.jpg" alt="Post Pic" width="226" height="149" /></a></div>
           <!--/post-pic -->
           <div class="post-excerpt">
-            <p><strong>Maximillian Reichert</strong><br />
+            <p><strong>Mäx Reichert</strong><br />
              Designer des Internetauftrittes.</p>
           </div>
           <!--/post-excerpt -->
@@ -69,14 +74,8 @@ $mods = '
         <!--/content -->
       </div>
       <!--/box -->
-      <div class="clr"></div>
-	  ';
-	 
-
-if($subpage = 'admins') {
-	$content = $admins;
+      <div class="clr"></div>';
 } else {
-	$content = $subpage;
+	$content = 'Fehler!';
 }
-
 ?>

@@ -40,7 +40,7 @@ p { line-height:1.5em; padding:0 0 1.3em; }
 #search input#s { float:left; width:216px; padding:6px 5px; margin:0; border:0; background:none; color:#b4b4b4; font:normal 12px/14px Arial, Helvetica, sans-serif; }
 #search .btn { float:left; padding:2px 0 0 0; margin:0; border:0; width:auto; }
 /*- Top Nav -*/
-.topnav { float:right; width:450px; margin:0; padding:60px 0 0 0; }
+.topnav { float:right; width:500px; margin:0; padding:60px 0 0 0; }
 .topnav ul { list-style:none; padding:0; margin:0; }
 .topnav li { float:left; padding:0 5px; }
 .topnav li a { font:normal 14px Arial, Helvetica, sans-serif; color:#b6b6b6; display:block; float:left; padding:15px 0;}
