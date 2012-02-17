@@ -1,14 +1,11 @@
     <div class="clr"></div>
     <div id="nav1">
       <ul class="sf-menu sf-js-enabled">
-    <li class="cat-item cat-item-9"><a href="index.php?page=team&subpage=admins" class="{$activeadmins}" title="Link">
-        	<span>Admins</span></a>
+    <li class="cat-item cat-item-9"><a href="index.php?page=community&subpage=aboutus" class="{$activeaboutus}" title="Link">
+        	<span>Über uns</span></a>
         </li>
-        <li class="cat-item cat-item-3"><a href="index.php?page=team&subpage=mods" class="{$activemods}" title="Link"><span>Moderatoren</span></a> </li>
-        <li class="cat-item cat-item-6"><a href="index.php?page=team&subpage=reviewer" class="{$activereviewer}" title="Link"><span>Reviewer</span></a>
-        <li class="cat-item cat-item-12"><a href="index.php?page=team&subpage=autoren" class="{$activeautoren}" title="Link"><span>Autoren</span></a> </li>
-        <li class="cat-item cat-item-13"><a href="index.php?page=team&subpage=journalisten" class="{$activejournalisten}" title="Link"><span>Journalisten</span></a> </li>
-        <li class="cat-item cat-item-11"><a href="index.php?page=team&subpage=besondereuser" class="{$activebesondereuser}" title="Link"><span>Besondere User</span></a></li>
+        <li class="cat-item cat-item-3"><a href="index.php?page=team&subpage=contests" class="{$activecontests}" title="Link"><span>Contests</span></a> </li>
+        <li class="cat-item cat-item-6"><a href="index.php?page=team&subpage=jointeam" class="{$activejointeam}" title="Link"><span>Team bewerbung</span></a>
       </ul>
       <div class="clr"></div>
     </div>

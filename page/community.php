@@ -3,17 +3,16 @@ $pagetitle = 'Community';
 
 $content = 'lol';
 
-/* if(isset($_GET['subpage'])) {
+if(isset($_GET['subpage'])) {
 	$subpage = $_GET["subpage"];
+	include('page/subpage/'.$subpage.'.php');
 		} else { 
-	$subpage = 'admins';
-	}*/
-	
-$activesubnavi = 'active';
-// Noch benötigt --  $activesubnavi = 'active'.$_GET["subpage"];
+		$content  = 'lollol';
+	}
+$activesubnavi = 'active'.$_GET["subpage"];
 
 //if($subpage == 'admins') {
-$content = '
+/*$content = '
 <div class="post-title">
             <h2>Das Game-Lauch.de-Team</h2>
           </div>
